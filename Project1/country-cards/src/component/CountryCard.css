@@ -1,0 +1,116 @@
+/* Styling for the card */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    max-height:500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    position: relative;
+    flex: 0 0 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container for the card list, cards will display in a row */
+.card-list {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+    gap: 200px; /* Space between the cards */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+}
+
+/* University logo container */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Adjust the logo size to 10x10 */
+.university-logo {
+    width: 170px;
+    height: 170px;
+}
+
+/* Other styles */
+.card-header {
+    font-size: 1.5rem;
+    font-style:inherit;
+    margin-bottom: 20px;
+}
+
+.card-header-left {
+    flex: 1;
+}
+
+.course-info {
+
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.check-match {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1rem;
+}
+
+.heart-icon {
+    color: #888;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect for heart icon */
+.heart-icon:hover {
+    color: red;
+}
+
+/* University name and ranking placement */
+.university-details {
+    font-size: 2.5rem;
+    margin-top: 1px;
+    color:rgb(15, 15, 15);
+}
+
+.university-details strong {
+    display: block;
+    font-weight: bold;
+}
+
+.ranking {
+    color: #007bff;
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+/* Cost and duration section at bottom-right corner */
+.cost-duration {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    text-align: right;
+    font-size: 1.0rem;
+}
+
+.program-button {
+    background-color: rgba(15, 2, 2, 0.646);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.program-button:hover {
+    background-color: rgb(72, 169, 184);
+}
